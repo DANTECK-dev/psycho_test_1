@@ -1,23 +1,18 @@
-import logo from './logo.svg';
 import './styles/App.css';
+import List from "./components/UI/List";
+import ListItem from "./components/UI/ListItem";
+import TextArea from "./components/UI/TextArea/TextArea";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <List header={'Психологический тест студентов'}>
+            <ListItem title={'1. Каким вы видите образ обычного студента'}>
+                <TextArea placeholder={'Введите текст'}>
+
+                </TextArea>
+            </ListItem>
+        </List>
     </div>
   );
 }

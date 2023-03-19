@@ -1,0 +1,5 @@
+.BtnSave {
+    background: linear-gradient(#3ab3af, #3ab3af) no-repeat 0 100%;
+    transition: ease-in-out 0.2s;
+    border: #3ab3af solid 2px;
+}

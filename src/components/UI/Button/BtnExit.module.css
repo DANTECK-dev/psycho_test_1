@@ -1,0 +1,5 @@
+.BtnExit {
+    background: linear-gradient(#b33a3a, #b33a3a) no-repeat 0 100%;
+    transition: ease-in-out 0.2s;
+    border: #b33a3a solid 2px;
+}
