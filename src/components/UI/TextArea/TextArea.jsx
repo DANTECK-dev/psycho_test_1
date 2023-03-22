@@ -9,6 +9,7 @@ class TextArea extends React.Component {
         this.state = {
             style: {
                 border: 'lightgray 2px solid',
+                overflow: 'visible',
             }
         }
     }
@@ -17,6 +18,7 @@ class TextArea extends React.Component {
         this.setState({
             style: {
                 border: 'gray 2px solid',
+                overflow: 'visible',
             }
         })
     }
@@ -25,6 +27,7 @@ class TextArea extends React.Component {
         this.setState({
             style: {
                 border: 'lightgray 2px solid',
+                overflow: 'visible',
             }
         })
     }
