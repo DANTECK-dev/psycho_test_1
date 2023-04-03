@@ -14,7 +14,7 @@ class TextArea extends React.Component {
         }
     }
     onFocus = () => {
-        console.log('focus on textarea')
+        //console.log('focus on textarea')
         this.setState({
             style: {
                 border: 'gray 2px solid',
@@ -23,7 +23,7 @@ class TextArea extends React.Component {
         })
     }
     onBlur = () => {
-        console.log('focus on textarea')
+        //console.log('focus on textarea')
         this.setState({
             style: {
                 border: 'lightgray 2px solid',
@@ -34,11 +34,12 @@ class TextArea extends React.Component {
     render() {
         return (
             <TextareaAutosize className={classNames(css.TextArea)}
-                      placeholder={this.props.placeholder}
+                              placeholder={this.props.placeholder}
                               onFocus={this.onFocus}
                               onBlur={this.onBlur}
-                              style={this.state.style}>
-            </TextareaAutosize>
+                              style={this.state.style}
+                              name={this.props.Name}
+            ></TextareaAutosize>
         );
     }
 }

@@ -1,0 +1,35 @@
+.CheckBox {
+    display: flex;
+}
+.CheckBoxInput {
+    margin: 2px 10px 2px 2px;
+    transition: ease-in-out 0.5s;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #adb5bd;
+    border-radius: 0.25em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+.CheckBoxInputActive {
+    margin: 2px 10px 2px 2px;
+    transition: ease-in-out 0.5s;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border-radius: 0.25em;
+    background-color: red;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+    border: red 2px solid;
+}
+.CheckBoxLabel {
+    display: block;
+}

@@ -13,7 +13,7 @@ class BtnExit extends React.Component {
         }
     }
     MouseEnter = () =>{
-        console.log('mouse enter button exit')
+        //console.log('mouse enter button exit')
         this.setState({
             style: {
                 backgroundSize: '100% 100%'
@@ -22,7 +22,7 @@ class BtnExit extends React.Component {
     }
 
     MouseLeave = () =>{
-        console.log('mouse leave button exit')
+        //console.log('mouse leave button exit')
         this.setState({
             style: {
                 backgroundSize: '100% 0'

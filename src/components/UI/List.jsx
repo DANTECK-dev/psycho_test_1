@@ -8,6 +8,7 @@ import BtnSave from "./Button/BtnSave";
 class List extends React.Component {
     constructor(props) {
         super(props);
+        /*this.saveClick = this.saveClick.bind(this);*/
         this.state = {
 
         }
@@ -41,6 +42,10 @@ class List extends React.Component {
         flexDirection: 'row',
         justifyContent: 'space-between'
     }
+    /*saveClick = () => {
+        alert('Click')
+        this.setState({})
+    }*/
     render() {
         return (
             <StyleRoot>
@@ -55,7 +60,7 @@ class List extends React.Component {
                     <div style={this.style_list}>{this.props.children}</div>
 
                     <div style={this.style_btn_save}>
-                        <BtnSave>Сохранить</BtnSave>
+                        <BtnSave saveClick={this.props.saveClick}>Сохранить</BtnSave>
                     </div>
                 </div>
             </StyleRoot>

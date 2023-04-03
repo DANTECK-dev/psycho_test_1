@@ -13,7 +13,7 @@ class BtnSave extends React.Component {
         }
     }
     MouseEnter = () =>{
-        console.log('mouse enter button save')
+        //console.log('mouse enter button save')
         this.setState({
             style: {
                 backgroundSize: '100% 100%'
@@ -22,12 +22,15 @@ class BtnSave extends React.Component {
     }
 
     MouseLeave = () =>{
-        console.log('mouse leave button save')
+        //console.log('mouse leave button save')
         this.setState({
             style: {
                 backgroundSize: '100% 0'
             }
         })
+    }
+    OnClick = () => {
+        //console.log('Нажатие на кнопку')
     }
 
     render() {
@@ -37,6 +40,9 @@ class BtnSave extends React.Component {
                 onMouseLeave={this.MouseLeave}
                 onFocus={this.MouseEnter}
                 onBlur={this.MouseLeave}
+
+                onClick={() => this.props.saveClick()}
+                //onClick={this.OnClick}
 
                 className={classNames(
                     default_classes.Btn,
